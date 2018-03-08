@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.jalan{
+			position: relative;
+			height: 100px;
+			background-color: #ddd;
+			width: 100%;
+			border: 1px solid #999;
+			overflow: hidden;
+		}
+
+		.peluru1{
+			position: absolute;
+			left: -50px;
+			height: 50px;
+			animation: gerakpeluru 6s infinite; 
+		}
+
+		.peluru2{
+			position: absolute;
+			right:  -50px;
+			height: 50px;
+			animation: gerakpeluru_a 5s infinite; 
+		}
+
+		@keyframes gerakpeluru{
+			0%{left: -500px;}
+			100%{left: 100%;}
+		}
+
+		@keyframes gerakpeluru_a{
+			0%{right: : -50px;}
+			100%{right:  100%;}
+		}
+
+
+	</style>
+</head>
+<body>
+<div class="jalan">
+	<div class="peluru1">
+		<img style="height: 100%;" src="img/peluru.png">
+	</div>	
+
+</div>
+
+<div class="jalan">
+	<div class="peluru2">
+		<img style="height: 100%;" src="img/peluru.png">
+	</div>	
+
+</div>
+
+</body>
+</html>
